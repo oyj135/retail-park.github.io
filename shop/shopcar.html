@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/show.css" type="text/css">
+		<script type="text/javascript" src="js/shoppingCart.js"></script>
+		
+	</head>
+	<body>
+		<!--顶部区域-->
+		<div class="top_bg">
+  <div class="top_content">
+    <div class="floatl"><img src="img/star.jpg" align="center">收藏 | HI，欢迎来订购 ！<a href="" class="orange">[请登录]</a> <a href=""  class="orange"> [免费注册]</a></div>
+    <div class="floatr">客户服务<img src="img/arrow.gif">&nbsp;网站导航<img src="img/arrow.gif">&nbsp;
+      <div class="xl">
+          <!--购物车-->
+        <div class="droparrow" onclick="showCar()"><span class="shopcart"></span>我的购物车
+            <span class="orange">0</span>件<img src="img/arrow.gif"/></div>
+        <!--下拉菜单-->
+        <div class="dropdown" id="dropdown" style="display: none" 
+            ondrop="drop(event)" ondragover="allowDrop(event)"> 
+          <ul class="shop_pic">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+		<!--顶部区域end-->
+		
+	<div class="clear"></div>
+    <!--logo,header-->
+    <div class="logo">
+		
+			<a herf=""><img src="img/logo.jpg"></a>
+			<img src="img/banner.jpg" class="floatr">	
+	</div>
+	<!--logo end-->
+	
+	<!--菜单导航start-->
+	<div class="nav_bg">
+		<div class="nav_content">
+		<ul class="nav">
+			<li><a href="index.html" class="white">首页</a></li>
+			<li><a href="https://taobao.okmiku.com/?r=/l&sort=0&activityId=177" class="white"></a>年货节</li>
+			<li class="nav_active"><a href="shopcar.html" class="white">好货精选</a></li>
+			<li><a class="white">疯抢榜</a></li>
+			<li><a class="white">9块9包邮</a></li>
+			<li><a class="white">咚咚抢</a></li>
+			<li><a class="white">折上折</a></li>		
+		</ul>
+		</div>
+	</div>
+	<!--菜单导航结束-->
+	<!--中间部分-->
+	<div class="main">
+		<!--购物分类-->
+		<ul class="menu">
+		<li>
+			<span class="title">女装</span>
+		</li>
+		<li>
+			<span class="red_dot"></span><a href=" ">上衣</a><img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class="red_dot"></span><a href=" ">下装</a><img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class="red_dot"></span><a href=" ">连衣裙</a><img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class="title">男装</span>
+		</li>
+		<li>
+			<span class="red_dot"></span><a href=" ">T恤</a>><img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class="red_dot"></span><a href=" ">短袖</a><span class=<img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class="red_dot"></span><a href=" ">衬衫</a><img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class="title">童装</span>
+		</li>
+		<li>
+			<span class=" red_dot"></span><a href=" ">上衣</a></span><img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class=" red_dot"></span><a href=" ">裤子</a><img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class="title">运动</span>
+		</li>
+		<li>
+			<span class=" red_dot"></span><a href=" ">运动裤</a><img src="img/arrow_r.jpg" align="right">
+		</li>
+		<li>
+			<span class=" red_dot"></span><a href=" ">跑鞋</a><img src="img/arrow_r.jpg" align="right">
+		</li>
+	</ul>
+	
+		<!--中间区-->
+		<div class="middle">
+			<h1 class="pic_title">最新上架</h1>
+			<div class="pic_list">
+								<dl>
+					<div><img src="img/shopshow/yifu6.jpg"/></div>
+					<dt><span class="price">¥119.0元</span><span class="font12">434人购买</span></dt>
+					<dd>2023新款镂空连衣裙</dd>
+				</dl>
+												<dl>
+					<div><a href="spxq.html"><img src="img/shopshow/yifu1.jpg"/></a></div>
+					<dt><span class="price">¥119.0元</span><span class="font12">434人购买</span></dt>
+					<dd>冬季新款棉衣女风衣</dd>
+				</dl>
+				<dl>
+					<div><img src="img/shopshow/yifu2.jpg"/></div>
+					<dt><span class="price">¥69.0元</span><span class="font12">1000人购买</span></dt>
+					<dd>2023新款透气冬季必备T恤</dd>
+				</dl>
+				<dl>
+					<div><img src="img/shopshow/yifu3.jpg"/></div>
+					<dt><span class="price">¥169.0元</span><span class="font12">674人购买</span></dt>
+					<dd>韩版甜美字母圆领T恤</dd>
+				</dl>
+				<dl>
+					<div><img src="img/shopshow/yifu4.jpg"/></div>
+					<dt><span class="price">¥219.0元</span><span class="font12">234人购买</span></dt>
+					<dd>2023新款娃娃衬衫</dd>
+				</dl>
+				<dl>
+					<div><img src="img/shopshow/yifu7.jpg"/></div>
+					<dt><span class="price">¥219.0元</span><span class="font12">234人购买</span></dt>
+					<dd>2023新款百搭显瘦无袖上衣</dd>
+				</dl>
+				<dl>
+					<div><img src="img/shopshow/yifu5.jpg"/></div>
+					<dt><span class="price">¥29.0元</span><span class="font12">34人购买</span></dt>
+					<dd>2023新款格子衬衫</dd>
+				</dl>
+				<dl>
+					<div><img src="img/shopshow/yifu8.jpg"/></div>
+					<dt><span class="price">¥429.0元</span><span class="font12">634人购买</span></dt>
+					<dd>韩版印花短裙 A字裙</dd>
+				</dl>
+	
+			</div>
+			<!--品牌活动-->
+			<h1 class="pic_title">品牌活动</h1>
+			<ul class="pic_list2">
+				<script type="text/javascript">
+					var images=["dress1.jpg","dress2.jpg","dress3.jpg","dress4.jpg"];
+					var contents=["独家定制V双层欧根纱里衬 色织时装料大牌范蓬蓬长裙","夏季新款 子域D5656E 简约通勤腰带修身打摆短裙","爱美斯优雅显瘦大摆长裙 中长款复古印花淑女裙","亿婷女装新品显瘦黑白条纹阔腿七分裤"];
+					for(var i in images){
+						var goodsInfo="<li><img src='img/shopshow/"+images[i]+"' /><p>"+contents[i]+"</p></li>";
+						document.write(goodsInfo);
+					}
+				</script>
+			</ul>	
+		</div>
+		<!--中间区end-->
+		<!--右侧热门推荐start-->
+		<div class="right_nav id="right_nav>
+			<h1 class="notice_title">热门推荐</h1>
+
+			<script type="text/javascript" src="js/hottj.js"></script>
+		</div>	
+		<!--右侧热门推荐end-->
+	</div>
+	<!--中间部分end-->
+
+	<table width="100%" border="0" cellpadding="0" cellpadding="0" bgcolor="#6a6665" height="35" class=" foot_bg">
+   	<tr>
+   		<td class="padding-top"><table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+   			<tr>
+   				<td width="25%" align="center"><img src=""></td>
+   				<td width="20%" align="center"><img src="img/gray1.jpg"></td>
+   				<td width="20%" align="center"><img src="img/gray2.jpg"></td>
+   				<td width="20%" align="center"><img src="img/gray3.jpg"></td>
+   				<td width="20%" align="center"><img src="img/gray4.jpg"></td>
+   				<td width="20%" align="center"><img src="img/gray5.jpg"></td>
+   			</tr>
+   </table>
+   		</td>
+   </tr>
+   <tr>
+   	<td bgcolor="#efefef" class="foot_line publishing-top"><table width="1200" border="0" cellspecing="0" cellpadding="0" align="center"
+   		<tr>
+   			<td width="22%"></td>
+   			<td align="center" valign="top">
+   				
+   				<img src="img/red1.jpg"><br>
+   				<img src="img/line1.jpg"/></td>
+   				
+   				<td width="15%" valign="top"><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+   					<tr>
+   						<td class="font16 padding-bottom">新手指导</td>
+   					</tr>
+   					<tr>
+   						<td>用户注册</td>
+   					</tr>
+   					<tr>
+   						<td>购物流程</td>
+   					</tr>
+   					<tr>
+   						<td>服务协议</td>
+   					</tr>
+   					<tr>
+   						<td><a href=" ">更多</a><img src="img/arrow_r.jpg" align="right"></td>
+   					</tr>	
+   				</table></td>
+   				<td align="center" valign="top"><img src="img/red2.jpg"><br>
+   				<img src="img/line1.jpg"/></td>
+   				<td width="15%" valign="top"><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+   					<tr>
+   						<td class="font16 padding-bottom">支付方式</td>
+   					</tr>
+   					<tr>
+   						<td>货到付款</td>
+   					</tr>
+   					<tr>
+   						<td>其他软件支付</td>
+   					</tr>
+   					<tr>
+   						<td>优惠卷抵用</td>
+   					</tr>
+   					<tr>
+   						<td><a href=" ">更多</a><img src="img/arrow_r.jpg" align="right"></td>
+   					</tr>
+   				
+   				</table></td>				
+   				
+   				<td align="center" valign="top"><img src="img/red4.jpg"><br>
+   				<img src="img/line1.jpg"/></td>
+   				<td width="15%" valign="top"><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+   					<tr>
+   						<td class="font16 padding-bottom">售后服务</td>
+   					</tr>
+   					<tr>
+   						<td>退换货协议</td>
+   					</tr>
+   					<tr>
+   						<td>关于发票</td>
+   					</tr>
+   					<tr>
+   						<td>图换货运费</td>
+   					</tr>
+   					<tr>
+   						<td><a href=" ">更多</a><img src="img/arrow_r.jpg" align="right"></td>
+   					</tr>
+   				
+   				</table></td>
+   				
+   				<td align="center" valign="top"><img src="img/red5.jpg"><br>
+   				<img src="img/line1.jpg"/></td>
+   				<td width="15%" valign="top"><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+   					<tr>
+   						<td class="font16 padding-bottom">关于账号</td>
+   					</tr>
+   					<tr>
+   						<td>修改个人信息</td>
+   					</tr>
+   					<tr>
+   						<td>修改密码</td>
+   					</tr>
+   					<tr>
+   						<td>找回密码</td>
+   					</tr>
+   					<tr>
+   						<td><a href=" ">更多</a><img src="img/arrow_r.jpg" align="right"></td>
+   					</tr>
+   				
+   				</table>
+   				</table></td>
+   		</tr>
+   		<tr>
+   			<td bgcolor="#efefef" align="center" class="padding-top">
+   				中国青岛高新区河东路8888号青软教育集团 咨询热线:400-658-0166400-658-1022<br/>
+   				<img src="img/foot_pic.jpg"></td>
+   		</tr>
+   		</table>
+   			
+   		<!--底部end-->
+	
+	</body>
+</html>

@@ -1,0 +1,25 @@
+
+    .focusBox {
+        position: absolute;
+        top: 490px;
+        width: 120px;
+        left: 50%;
+        margin-left: -60px;
+        list-style: none;
+    }
+    
+    .focusBox li {
+        float: left;
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background: gray;
+        cursor: pointer;
+    }
+    
+    .focusBox li.cur {
+        background: #f60;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+    }
