@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理页面</title>
+    <link rel="stylesheet" href="css/top_and_nav.css">
+    <script src="js/jQuery.js"></script>
+    <script>
+        //导航切换
+        $(function(){
+    //点击子标题
+	$(".menuson li").click(function(){
+        //删除样式
+		$(".menuson li.active").removeClass("active")
+        //添加样式
+		$(this).addClass("active");
+	});
+	//点击主标题
+	$('.title').click(function(){
+        //next('ul')获得每个ul元素
+		var $ul = $(this).next('ul');
+        //find(ul)获得ul中每个元素的后代
+		$('dd').find('ul').slideUp();
+        //$ul.is(':visible')可见的ul元素，如果当前的ul是block，那么其余的就变为none
+		if($ul.is(':visible')){
+			$(this).next('ul').slideUp();//收回，将指定元素display变为none
+		}else{
+			$(this).next('ul').slideDown();//向下展开，并将指定的display变为block
+		}
+	});
+})	
+    </script>
+</head>
+<body>
+    <div class="lefttop">
+        <span></span>功能菜单
+    </div>
+    <dl class="leftmenu">
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="imgs/leftico05.png" />
+                </span>
+                购物后台管理
+            </div>
+            <ul class="menuson" style="display: none;">
+                <li class>
+                    <cite></cite>
+                    <a href="addgoods.html" target="rightFrame">添加商品</a>
+                    <i></i>
+                </li>
+                <li class="active">
+                    <cite></cite>
+                    <a href="goshop.html" target="rightFrame">商品列表</a>
+                    <i></i>
+                </li>
+                <li class>
+                    <cite></cite>
+                    <a href="#" target="">商品类型</a>
+                    <i></i>
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <div class="title">
+                <span>
+                    <img src="imgs/leftico02.png" />
+                </span>
+                影视后台管理
+            </div>
+            <ul class="menuson" style="display: none;">
+                <li class="active">
+                    <cite></cite>
+                    <a href="addmove.html" target="rightFrame">添加影片</a>
+                    <i></i>
+                </li>
+                <li class>
+                    <cite></cite>
+                    <a href="move.html" target="rightFrame">影片列表</a>
+                    <i></i>
+                </li>
+                <li>
+                    <cite></cite>
+                    <a href="#">影片类型</a>
+                    <i></i>
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="imgs/leftico05.png" /></span>
+                餐饮后台管理
+            </div>
+            <ul class="menuson" style="display: none;">
+                <li class="active">
+                    <cite></cite>
+                    <a href="#" target="">添加美食</a>
+                    <i></i>
+                </li>
+                <li>
+                    <cite></cite>
+                    <a href="#" target="">美食列表</a>
+                    <i></i>
+                </li>
+                <li>
+                    <cite></cite>
+                    <a href="#">美食类型</a>
+                    <i></i>
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="imgs/leftico04.png" /></span>
+                订单管理
+            </div>
+            <ul class="menuson" style="display: none;">
+                <li class="active">
+                    <cite></cite>
+                    <a href="#">最新订单</a>
+                    <i></i>
+                </li>
+                <li>
+                    <cite></cite>
+                    <a href="#">已处理订单</a>
+                    <i></i>
+                </li>
+                <li>
+                    <cite></cite>
+                    <a href="#">取消订单</a>
+                    <i></i>
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="imgs/leftico04.png" /></span>
+                交易记录
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <a href="Chat.html"  target="rightFrame">
+                    <span><img src="imgs/leftico06.png" /></span>
+                    统计报表
+                </a>
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="imgs/leftico04.png" /></span>
+                权限分配
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="imgs/leftico08.png" /></span>
+                修改密码
+            </div>
+        </dd>
+        <dd>
+            <div class="title">
+                <span><img src="imgs/leftico07.png" /></span>
+                系统设置
+            </div>
+        </dd>
+    </dl>
+</body>
+</html>

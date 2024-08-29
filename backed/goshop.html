@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物后台管理</title>
+    <link rel="stylesheet" href="css/goshop.css">
+</head>
+<body>
+    <div class="place"> <span>位置：</span>       
+        <ul class="placeul">         
+            <li><a href="main.html" target="_top">首页</a></li>       
+            <li><a href="#">购物后台管理</a></li>      
+            <li><a href="#">商品列表</a></li>    
+        </ul>     
+        <div class="date_text">
+            <img src="imgs/leftico04.png">&nbsp;今天是2015年2月10日 星期一 12：00
+        </div>  
+    </div>    
+    <div class="rightinfo"> 
+        <div class="tools">   
+            <ul class="toolbar">
+                <li id="add" onclick="adds()"><span><img src="imgs/t01.png" /></span>添加</li>
+                <li class="fix"><span><img src="imgs/t02.png" /></span>修改</li>
+                <li class="delete" onclick="de()"><span><img src="imgs/t03.png" /></span>删除</li>  
+                <li><a href="Chat.html" target="rightFrame"><span><img src="imgs/t04.png" /></span>统计</a></li> 
+                <li><span><img src="imgs/t05.png" /></span>设置</li>
+            </ul>
+            <ul class="seachform">
+                <li>
+                  <div class="vocation">
+                    <select class="select3">
+                      <option>商品类别</option>
+                      <option>女装</option>
+                      <option>男装</option>
+                      <option>童装</option>
+                      <option>运动</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <input type="text" class="scinput" placeholder="请输入商品名称"/>
+                </li>
+                <li>
+                  <input name="searchBtn" type="button" class="scbtn" value="查询"/>
+                </li>
+              </ul>  
+        </div> 
+        <table class="tablelist" id="tablelist"> 
+            <thead>   
+                <tr>   
+                    <th>
+                        <input name="checkAll" type="checkbox" id="checkAll" style="cursor: pointer;"/>全选/
+                        <input name="checkOther" type="checkbox" id="checkOther" style="cursor: pointer;"/>反选
+                    </th>
+                    <th>缩略图</th>       
+                    <th>商品名称</th>     
+                    <th>商品类别</th>             
+                    <th>数量(件）</th>
+                    <th>单价（元）</th>  
+                    <th>发布时间</th>    
+                    <th>是否审核</th> 
+                    <th>操作</th>   
+                </tr>  
+            </thead>   
+            <tbody id="tdbody">      
+                <tr id="odd">  
+                    <td><input name="" type="checkbox" value="" style="cursor: pointer;"/></td>      
+                    <td class="imgtd"><img src="imgs/img06.png" /></td>    
+                    <td>RAX 头层牛皮户外鞋 男防滑登山鞋减震</td>  
+                    <td>运动</td> 
+                    <td>334</td>    
+                    <td>¥566.00</td>    
+                    <td>2015-06-06 15:05</td>     
+                    <td>已审核</td>    
+                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink" href="JavaScrip:void(0);" onclick="drop(this)"> 删除</a></td>
+                </tr> 
+                <tr id="odd" class="odd">     
+                    <td><input name="" type="checkbox" value="" style="cursor: pointer;"/></td>    
+                    <td class="imgtd"><img src="imgs/img07.png" /></td>   
+                    <td>七匹狼休闲裤 春夏新款 男士时尚无褶休闲裤</td>    
+                    <td>男装</td>    
+                    <td>455</td>
+                    <td>¥236.00</td>
+                    <td>2015-06-08 14:02</td>
+                    <td>未审核</td>
+                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink" href="JavaScrip:void(0);" onclick="drop(this)">删除</a></td> 
+                </tr>  
+                <tr id="odd"> 
+                    <td><input name="" type="checkbox" value="" style="cursor: pointer;"/></td>
+                    <td class="imgtd"><img src="imgs/img08.png" /></td>
+                    <td>欧美大牌五分袖收腰显瘦睫毛蕾丝连衣裙 粉色 </td>
+                    <td>女装</td>
+                    <td>899</td>
+                    <td>¥136.00</td>
+                    <td>2015-06-07 13:16</td>
+                    <td>未审核</td> 
+                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink" href="JavaScrip:void(0);" onclick="drop(this)">删除</a></td>   
+                </tr>     
+                <tr class="odd" id="odd">   
+                    <td><input name="" type="checkbox" value="" style="cursor: pointer;"/></td>       
+                    <td class="imgtd"><img src="imgs/img09.png" /></td>   
+                    <td>锐步REEBOK热2015新款线上独家复古GL 2620运动生活休闲鞋男鞋</td>     
+                    <td>运动</td>   
+                    <td>3456</td>    
+                    <td>¥346.00</td>    
+                    <td>2015-06-06 10:36</td>   
+                    <td>已审核</td>    
+                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink" href="JavaScrip:void(0);" onclick="drop(this)">删除</a></td>     
+                </tr>     
+                <tr id="odd">    
+                    <td><input name="" type="checkbox" value="" style="cursor: pointer;"/></td>    
+                    <td class="imgtd"><img src="imgs/img10.png" /></td>     
+                    <td>新款中大童荷叶边短袖裙子韩版儿童公主裙女童连衣裙 </td>    
+                    <td>童装</td>  
+                    <td>678</td>   
+                    <td>¥316.00</td>    
+                    <td>2015-06-05 13:25</td>    
+                    <td>已审核</td>    
+                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink" href="JavaScrip:void(0);" onclick="drop(this)">删除</a></td>      
+                </tr>      
+            </tbody>    
+        </table>   
+        <div class="pagin">     
+            <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>     
+            <ul class="paginList">      
+                <li class="paginItem"><a href="#"><span class="pagepre"></span></a></li>     
+                <li class="paginItem"><a href="#">1</a></li>            
+                <li class="paginItem current"><a href="#">2</a></li>     
+                <li class="paginItem"><a href="#">3</a></li>       
+                <li class="paginItem"><a href="#">4</a></li>      
+                <li class="paginItem"><a href="#">5</a></li>       
+                <li class="paginItem more"><a href="#">...</a></li>      
+                <li class="paginItem"><a href="#">10</a></li>    
+                <li class="paginItem"><a href="#"><span class="pagenxt"></span></a></li>      
+            </ul>    
+        </div> 
+    </div>
+    <script>
+        //添加
+        function adds(){
+            var tdbody=document.getElementById('tdbody');
+        //点击事件，创建tr行
+            var tr=document.createElement('tr');
+            tdbody.appendChild(tr);
+            tr.id='odd';
+            //行里面创建td
+            for(var i=0;i<9;i++)
+            {         
+                switch (i) {
+                    case 0: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var input=document.createElement('input');
+                     td.appendChild(input);
+                     input.type='checkbox';
+                     break;
+                     case 1: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var input=document.createElement('input');
+                     td.appendChild(input);
+                     input.type='file';
+                     input.style["margin"]='10px 10px 10px 0px';
+                     input.style["width"]='120px';
+                     var img=document.createElement('img');
+                     td.insertBefore(img,input);
+                     img.src='imgs/nopic.gif';
+                     img.style["height"]='75px';
+                     img.style["width"]='10';
+                     break;
+                     case 2: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var input=document.createElement('input');
+                     td.appendChild(input);
+                     input.style["border"]='1px solid black';
+                     input.style["height"]='20px';
+                     input.style["width"]='190';
+                     input.style["background"]='#FF9';
+                     break;
+                     case 3: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var input=document.createElement('input');
+                     td.appendChild(input);
+                     input.style["border"]='1px solid black';
+                     input.style["height"]='20px';
+                     input.style["width"]='45px';
+                     input.style["backgroundColor"]='#FF9';
+                     break;
+                     case 4: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var input=document.createElement('input');
+                     td.appendChild(input);
+                     input.style["border"]='1px solid black';
+                     input.style["height"]='20px';
+                     input.style["width"]='45px';
+                     input.style["backgroundColor"]='#FF9';
+                     //input.style.cssText='"border:1px solid black,height:20px,backgroundColor:#FF9"';
+                     break;
+                     case 5: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var input=document.createElement('input');
+                     td.appendChild(input);
+                     input.style["border"]='1px solid black';
+                     input.style["height"]='20px';
+                     input.style["width"]='45px';
+                     input.style["backgroundColor"]='#FF9';
+                     //input.style.cssText='"border:1px solid black,height:20px,backgroundColor:#FF9"';
+                     break;
+                     case 6: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var input=document.createElement('input');
+                     td.appendChild(input);
+                     input.type='date';
+                     input.style["border"]='1px solid black';
+                     input.style["height"]='20px';
+                     input.style["backgroundColor"]='#FF9';
+                     //input.style.cssText='"border:1px solid black,height:20px,backgroundColor:#FF9"';
+                     break;
+                     case 7: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var input=document.createElement('input');
+                     td.appendChild(input);
+                     input.style["border"]='1px solid black';
+                     input.style["height"]='20px';
+                     input.style["width"]='45px';
+                     input.style["backgroundColor"]='#FF9';
+                     //input.style='"border:1px solid black,height:20px,backgroundColor:#FF9"';
+                     break;
+                     case 8: 
+                    var td=document.createElement('td');
+                     tr.appendChild(td); 
+                     var a=document.createElement('a');
+                     td.appendChild(a);
+                     a.innerText='查看';
+                     a.style["color"]='#056dae';
+                     a.style["display"]='block';
+                     a.style["float"]='left';
+                     a.style["margin"]='0px';
+                     var a=document.createElement('a');
+                     td.appendChild(a);
+                     a.innerText='删除';
+                     a.style["color"]='#056dae';
+                     a.style["display"]='block';
+                     a.style["float"]='left';
+                     a.setAttribute("href","JavaScript:void(o);");
+                     a.setAttribute("onclick","drop(this)");
+                     break;
+                    default:
+                        break;
+                }
+ 
+            }
+        }
+         //删除功能
+        //为每一个删除超链接标签添加单击事件的属性
+        //定义删除的方法
+        function drop(obj){
+            //获取table元素
+            var table=obj.parentElement.parentElement.parentElement;
+            //获取tr元素
+            var tr=obj.parentElement.parentElement;
+            //通过table删除tr
+            table.removeChild(tr);
+        }
+        function de(){
+            //删除
+            var tdbody=document.getElementById('tdbody');
+            var trs=document.getElementById('odd');
+            tdbody.removeChild(trs);
+        }
+    </script>
+</body>
+    <script>
+        //获取元素
+        var checkAll=document.getElementById('checkAll');
+        var checkOther=document.getElementById('checkOther');
+        var tdbody=document.getElementById('tdbody').getElementsByTagName('input');
+        //注册事件
+        checkAll.onclick=function(){
+            //this.checked 得到复选框选中状态，true选中，false未选中
+            for(var i=0;i<tdbody.length;i++){
+                tdbody[i].checked=this.checked;
+            }
+            //设计反选，遍历下面每一个按钮设置为未选中
+            checkOther.onclick=function(){
+                for(var i=0;i<tdbody.length;i++){    
+                    tdbody[i].checked=false;
+            }
+            checkAll.checked=false;
+            checkOther.checked=true;
+            }
+             checkOther.checked=false
+        }
+        //下面复选需全选，上面全选才可以选中
+        for(var i=0;i<tdbody.length;i++){
+            //循环给下面的每一个选择框设置点击事件
+                tdbody[i].onclick=function(){
+                    var flag=true;
+                    //每次点击下面的复选框都要循环检查4个
+                    for(var i=0;i<tdbody.length;i++){
+                        //如果有一个未被选中，flag就=false，反之不变
+                        if(!tdbody[i].checked){
+                            flag=false;
+                            checkOther.checked=flag;
+                        }
+                    }
+                    checkAll.checked=flag;
+                    
+                }
+            }
+    </script>
+    
+</html>
