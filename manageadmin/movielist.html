@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>影视列表页面</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/list.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="main.html">首页</a></li>
+    <li><a href="#">影片列表</a></li>
+  </ul>
+</div>
+<div class="rightinfo">
+  <div class="tools">
+    <ul class="toolbar">
+      <li class="click"><span><img src="images/t01.png" /></span>添加</li>
+      <li class="click"><span><img src="images/t02.png" /></span>修改</li>
+      <li><span><img src="images/t03.png" /></span>删除</li>
+      <li><span><img src="images/t04.png" /></span>统计</li>
+      <li><span><img src="images/t05.png" /></span>设置</li>
+    </ul>
+    <iframe src="movie_search.html" scrolling="no" frameborder="0" width="400" height="42"></iframe>
+  </div>
+  <table class="imgtable">
+    <thead>
+      <tr>
+        <th><input name="" type="checkbox" value="" checked="checked"/></th>
+        <th width="100px;">缩略图</th>
+        <th>标题</th>
+        <th>导演</th>
+        <th>主演</th>
+        <th>发布类别</th>
+        <th>是否审核</th>
+        <th>发布日期</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td class="imgtd"><img src="images/img01.png" /></td>
+        <td><a href="#">一路惊喜</a>
+          <p class="intro_width">影片由六个风格迥异的故事组成，讲述一群人在除夕当日发生的一连串奇遇囧事。在新年的……</p></td>
+        <td>亚力克斯·嘉兰 </td>
+        <td>Ava，Caleb</td>
+        <td>喜剧</td>
+        <td>已审核</td>
+        <td>2014-05-04</td>
+        <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink"> 删除</a></td>
+      </tr>
+      <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td class="imgtd"><img src="images/img02.png" /></td>
+        <td><a href="#">狙击时刻</a>
+          <p class="intro_width">电影主要讲述了精英狙击手被国际特工重创后一次卧薪尝胆的反击，在枪林弹雨中追捕国际犯罪集团的故事。</p></td>
+        <td>杨江</td>
+        <td>宋洋,杨钧承 </td>
+        <td>动作</td>
+        <td><i>未审核</i></td>
+        <td>2014-05-04</td>
+        <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+      </tr>
+      <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td class="imgtd"><img src="images/img03.png" /></td>
+        <td><a href="#">智取威虎山</a>
+          <p class="intro_width">智取威虎山3D》由博纳影业集团，中国电影股份有限公司，八一电影制片厂等联合出品。</p></td>
+        <td>徐克</td>
+        <td>张涵予，梁家辉，林更新</td>
+        <td>动作</td>
+        <td>已审核</td>
+        <td>2014-05-04</td>
+        <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+      </tr>
+      <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td class="imgtd"><img src="images/img04.png" /></td>
+        <td><a href="#">咱们结婚吧</a>
+          <p class="intro_width">四对即将举行婚礼的情侣距离婚前结婚一周时间，因为婚前恐惧发生的各种冲突、逆转。。</p></td>
+        <td>刘江</td>
+        <td>高圆圆，姜武</td>
+        <td>爱情</td>
+        <td>已审核</td>
+        <td>2014-05-04</td>
+        <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+      </tr>
+      <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td class="imgtd"><img src="images/img05.png" /></td>
+        <td><a href="#">机械姬</a>
+          <p class="intro_width">伊萨克饰演一名神秘的亿万富翁，格里森饰演他公司的一名程序员，后者由于赢得公司一项幸运大奖而
+            影片截图
+            影片截图(37张)
+            被邀请到老板的别墅共度周末。</p></td>
+        <td>亚力克斯·嘉兰 </td>
+        <td>Ava，Caleb</td>
+        <td>科幻</td>
+        <td>已审核</td>
+        <td>2014-05-04</td>
+        <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagin">
+    <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+    <ul class="paginList">
+      <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+      <li class="paginItem"><a href="javascript:;">1</a></li>
+      <li class="paginItem current"><a href="javascript:;">2</a></li>
+      <li class="paginItem"><a href="javascript:;">3</a></li>
+      <li class="paginItem"><a href="javascript:;">4</a></li>
+      <li class="paginItem"><a href="javascript:;">5</a></li>
+      <li class="paginItem more"><a href="javascript:;">...</a></li>
+      <li class="paginItem"><a href="javascript:;">10</a></li>
+      <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+	$('.imgtable tbody tr:odd').addClass('odd');
+	</script>
+</body>
+</html>
